@@ -23,7 +23,7 @@ export class FirestoreService {
     return this.firestore.collection('relayCollection').snapshotChanges();
   }
   //Update a pinRelay
-  public updateRelayCollection(documentId: string, data: any) {
+  public updateRelay(documentId: string, data: any) {
     return this.firestore.collection('relayCollection').doc(documentId).set(data);
   }
 }
